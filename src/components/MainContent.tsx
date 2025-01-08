@@ -5,7 +5,7 @@ import axios from "axios";
 import BookCard from "./BookCard";
 
 const MainContent = () => {
-  const { searchQuery, selectedCategory, minPrice, maxPrice, keyword } 
+  const { searchQuery, selectedCategory, minPrice, maxPrice, keyword } =
     useFilter(); // this retrieves these variables and makes them usable
   const [products, setProducts] = useState<any[]>([]); //so it updates the product by having an empty array as it default and the any attribute makes it that any attribute can be stored in an array
   const [filter, setFilter] = useState("all"); //it updates the filter and having all as its default which makes it keep track of all the filler options
